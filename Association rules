@@ -1,0 +1,3 @@
+#Librería para Association rules
+!pip install efficient-apriori
+from efficient_apriori import apriori #algoritmo
