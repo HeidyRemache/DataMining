@@ -2,3 +2,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 from sklearn.cluster import DBSCAN
+
+url = 'https://raw.githubusercontent.com/edisonmalan/Edison-Malan-Patients/main/casasExam.csv'
+datos=np.loadtxt(url,delimiter=",")
+datos
