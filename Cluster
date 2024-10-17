@@ -9,3 +9,9 @@ datos
 
 clusters=DBSCAN(eps=2,min_samples=10).fit_predict(datos)
 print(clusters) 
+
+(figsize=(8,8))
+plt.scatter(datos[:,0],datos[:,1],c=clusters,s=100)
+plt.xlabel("Años de la construccion de las casa")
+plt.ylabel("Precio")
+plt.box(False)
