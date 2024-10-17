@@ -6,3 +6,6 @@ from sklearn.cluster import DBSCAN
 url = 'https://raw.githubusercontent.com/edisonmalan/Edison-Malan-Patients/main/casasExam.csv'
 datos=np.loadtxt(url,delimiter=",")
 datos
+
+clusters=DBSCAN(eps=2,min_samples=10).fit_predict(datos)
+print(clusters) 
